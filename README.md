@@ -26,7 +26,7 @@ Before modeling, I repeated the same process with the Detroit Pistons ultimately
 
 FINDINGS
 ------------
-I found the best model and feature combination to be a Random Forest classification with the negative sentiment feature. This “Random Forest Neg” as I called it performed with a weighted f1 score of 0.6930 or 69.30%. My reaction to this was that I was quite shocked that any of my models had performed above 50%. However, in retrospect it does make sense to me that negative sentiment analysis would be the biggest indicator of game outcomes. I concluded this version of the project with plotting a precision-recall curve of the “Random Forest Neg” model as seen in the notebook.
+I found the best model and feature combination to be a K Nearest Neighbors classification with all four sentiment features and k=5. This “K Nearest Neighbours (5) Four” as I called it performed with a weighted f1 score of 0.6203 or 62.03%. My reaction to this was that I was quite shocked that any of my models had performed above 50%. Additionally, it was interesting that using all four sentiment measures as features was the most effective. I concluded this version of the project with plotting a precision-recall curve of the “K Nearest Neighbours (5) Four” model as seen in the notebook.
 
 
 Finally, I plan on improving and building on this project in the future by scraping and modeling data from all 82 games and all 30 teams in the NBA for one season. I plan to use pandas html functionality along with the datetime python library’s timedelta function to streamline what is currently the most tedious part of this process.
